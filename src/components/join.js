@@ -1,6 +1,20 @@
-import React from 'react';
+import React,{useState} from 'react';
+import {Link}from 'react-router-dom';
 
 const Join = () => {
-    return <h1>Join</h1>;
+
+	const [name,setName]=useState('');
+	const [room,setRoom]=useState('');
+
+    return (
+    	<div className="joinQuterContainer">
+	    	<div>
+		    	<h1 className="heading">
+
+		    	</h1>
+	    	</div>
+    	</div>
+
+    	)
 };
 export default Join;
