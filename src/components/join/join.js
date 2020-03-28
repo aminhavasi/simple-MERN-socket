@@ -24,8 +24,8 @@ const Join = () => {
 						type="text"
 						onChange={(event)=>setRoom(event.target.value)} />
 					</div>
-					<Link onClick={event=>(!name || !room)?event.preventDefault():null} to={`/chat/?name=${name}&room=${room}`} >
-						<button className="button mt-20" type="submit">Sign In</buttom>
+					<Link onClick={event=>(!name.trim() || !room.trim())?event.preventDefault():null} to={`/chat/?name=${name}&room=${room}`} >
+						<button className="button mt-20" type="submit">Sign In</button>
 					</Link>
 	    	</div>
     	</div>
